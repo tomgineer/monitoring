@@ -4,10 +4,10 @@
     $insights = is_array($insights ?? null) ? $insights : [];
 ?>
 
-<div class="max-w-3xl mx-auto">
+<div class="max-w-3xl mx-auto" data-display-wrapper>
     <h1 class="mb-4">Server: <span class="text-accent"><?=esc($server)?></span></h1>
 
-    <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2 mb-12">
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-2 mb-12">
         <?php if (!empty($insights)): ?>
             <?php foreach ($insights as $insight): ?>
                 <?php

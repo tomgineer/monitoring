@@ -85,14 +85,14 @@ function fetch_monitoring_data(string $url, string $token): array {
  * @param string $token Bearer token for authentication.
  * @return array<int, array{index: int, url: string, response: array{error: string|null, status: int, data: array|null, raw: string|null}}>
  */
-function fetch_monitoring_batch(array $urls, string $token): array {
+function fetch_monitoring_batch(array $urls, string $token, int $cacheTtlSeconds = 60): array {
     $results = [];
 
     foreach ($urls as $index => $url) {
         $results[] = [
             'index' => $index,
             'url' => (string) $url,
-            'response' => fetch_monitoring_data((string) $url, $token),
+            'response' => fetch_monitoring_data_cached((string) $url, $token, $cacheTtlSeconds),
         ];
     }
 
