@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d232a;
+      }
+
+      .cls-2 {
+        fill: #283038;
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-3 {
+        fill: #191e24;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-4 {
+        fill: #4242b2;
+        filter: url(#drop-shadow-5);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        fill: #2f2f7f;
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-8 {
+        fill: #605dff;
+        filter: url(#drop-shadow-3);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-6" width="750" height="500"/>
+    </clipPath>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5.01" dy="5.01"/>
+      <feGaussianBlur result="blur" stdDeviation="6.02"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5.01" dy="5.01"/>
+      <feGaussianBlur result="blur-2" stdDeviation="6.02"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5.01" dy="5.01"/>
+      <feGaussianBlur result="blur-3" stdDeviation="6.02"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-4" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5.01" dy="5.01"/>
+      <feGaussianBlur result="blur-4" stdDeviation="6.02"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-5" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="5"/>
+      <feGaussianBlur result="blur-5" stdDeviation="6"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="BACKGROUND">
+    <rect class="cls-1" width="750" height="500"/>
+  </g>
+  <g id="OBJECTS">
+    <g class="cls-5">
+      <path class="cls-3" d="m285.55,175.62c6.21,51.58-52.77,95.82-42.59,146.76,5.15,25.75,27.24,45.55,32.65,71.24,5.99,28.42-9.71,56.78-27.59,79.67-9.35,11.97-19.62,23.61-28.45,35.99h539.7V-4.46H203.43c-7.68,22.72-6.53,48.56,4.47,69.95,20.86,40.56,72.2,64.85,77.65,110.13Z"/>
+      <path class="cls-2" d="m389.96,423.88c-4.58,30.2-19.26,57.5-32.06,85.41h401.38V-4.46h-385.33c-45.83,51.28-67.87,124.46-53.23,192,17.6,81.19,81.69,154.21,69.24,236.34Z"/>
+      <path class="cls-8" d="m404,256c11.5,14,25.25,24,38.88,34.12s27.12,20.38,38.12,34.88c24,39,0,83-16,120-10.42,23.45-11.53,45.05-6.1,64.29h300.38V-4.46h-239.23c-1.3,26.52-5.69,52.24-27.05,70.46-40,32-92,56-105.82,106.51-4.12,13.95-5.4,28.47-2.92,42.67,2.48,14.2,8.73,28.07,19.73,40.82Z"/>
+      <path class="cls-7" d="m541.37,318.72c-14.46,10.8-29.13,27.82-28.14,49.24,1.45,31.13,33.81,45.79,40.03,75.94,4.6,22.31-6.52,43.5-13.72,65.39h219.73V-4.46h-190.36c-1.37,1.22-2.73,2.45-4.06,3.74-30.59,29.37-50.91,82.36-37.58,128.28,7.97,27.46,26.07,47.59,40,70.82,13.92,23.23,23.95,55.52,13.09,81.29-7.95,18.88-24.54,28.26-38.99,39.06Z"/>
+      <path class="cls-4" d="m626.37,212.28c15.84,14.68,31.78,33.83,28.56,55.18-4.85,32.18-48.74,45.16-57.66,76.46-9.61,33.72,26.47,65.62,23.51,100.56-2,23.5-21.32,43.54-29.97,64.82h168.47V-4.46h-143.5c12.12,30.83,11.96,66.63-1.85,96.83-10.22,22.35-27.63,43.92-24.32,68.27,2.9,21.39,20.92,36.95,36.76,51.63Z"/>
+    </g>
+  </g>
+</svg>
