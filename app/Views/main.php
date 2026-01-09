@@ -35,7 +35,9 @@
                     <div class="stats bg-base-300">
                         <div class="stat">
                             <div class="stat-title"><?= esc((string) $title) ?></div>
-                            <div class="stat-value"><?= esc((string) $value) ?></div>
+                            <div class="stat-value">
+                                <?=(is_numeric($value) ? formatNumber($value) : esc($value))?>
+                            </div>
                             <div class="stat-desc text-wrap"><?= esc((string) $desc) ?></div>
                         </div>
                     </div>
@@ -49,3 +51,5 @@
 
     <?php endforeach; ?>
 </section>
+<?php
+?>
