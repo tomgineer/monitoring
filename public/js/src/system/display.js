@@ -1,8 +1,10 @@
+// Initialize display toggles for fullscreen and auto-refresh.
 export default function initDisplay() {
     toggleFullScreen();
     toggleAutoRefresh();
 }
 
+// Persist and apply fullscreen layout state.
 function toggleFullScreen() {
     const toggle = document.querySelector('[data-toggle="fullScreen"]');
     if (!toggle) {
@@ -27,6 +29,7 @@ function toggleFullScreen() {
     });
 }
 
+// Persist and apply auto-refresh meta tag state.
 function toggleAutoRefresh() {
     const toggle = document.querySelector('[data-toggle="refresh"]');
     if (!toggle) {
@@ -34,6 +37,7 @@ function toggleAutoRefresh() {
     }
 
     const refreshMetaName = 'auto-refresh';
+    // Add or remove the auto-refresh meta tag.
     const applyRefreshMeta = (isEnabled) => {
         const existingMeta = document.querySelector(`meta[name="${refreshMetaName}"]`);
         if (isEnabled) {

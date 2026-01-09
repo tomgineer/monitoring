@@ -1,4 +1,4 @@
-<section class="px-2 lg:px-4 py-6 lg:py-12 max-w-5xl mx-auto" data-display-wrapper>
+<section class="px-2 lg:px-4 py-6 lg:py-12 max-w-5xl mx-auto mt-6" data-display-wrapper>
     <?php $results = is_array($displayResults ?? null) ? $displayResults : []; ?>
 
     <?php if (empty($results)): ?>
@@ -32,15 +32,15 @@
                         $value = $insight['value'] ?? '';
                         $desc = $insight['desc'] ?? '';
                     ?>
-                    <div class="stats bg-base-300">
-                        <div class="stat">
-                            <div class="stat-title"><?= esc((string) $title) ?></div>
-                            <div class="stat-value">
-                                <?=(is_numeric($value) ? formatNumber($value) : esc($value))?>
-                            </div>
-                            <div class="stat-desc text-wrap"><?= esc((string) $desc) ?></div>
+
+                    <div class="stat bg-base-300 rounded-xl border-r-0">
+                        <div class="stat-title"><?= esc((string) $title) ?></div>
+                        <div class="stat-value" data-type="<?=$title?>" data-value="<?=$value?>">
+                            <?=(is_numeric($value) ? formatNumber($value) : esc($value))?>
                         </div>
+                        <div class="stat-desc"><?= esc((string) $desc) ?></div>
                     </div>
+
                 <?php endforeach; ?>
             </div>
         <?php elseif ($mode === 'raw' && is_string($raw)): ?>

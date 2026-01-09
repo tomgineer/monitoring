@@ -17,6 +17,7 @@
 <body class="min-h-screen flex flex-col bg-glow">
     <header>
         <?= $this->include('nav') ?>
+        <?= $this->include('media_group') ?>
     </header>
 
     <main class="flex-1">

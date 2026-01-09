@@ -6,4 +6,8 @@
         }
     }
 
+    .stat-desc {
+        @apply text-wrap;
+    }
+
 }
